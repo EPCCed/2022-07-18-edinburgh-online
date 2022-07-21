@@ -14,7 +14,7 @@ humantime: "09:30 - 13:00"    # human-readable times for the workshop e.g., "9:0
 startdate: 2022-07-18      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-07-21        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Juan Herrera"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Eleanor Broadway", "Caoimhin Laoide-Kemp", "Larisa Stoltzfus"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Eleanor Broadway", "William Lucas", "Caoimhin Laoide-Kemp", "Kevin Stratford"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["support@archer2.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.archer2.ac.uk/p/220718-data-carpentry # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -76,11 +76,12 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
+{% comment %}
 <h2>Registration</h2>
 <p>Please use the <a href="https://events.prace-ri.eu/event/1406/registrations/1046/">PRACE course registration form</a> to sign up for the workshop.</p>
 
 <hr/>
-
+{% endcomment %}
 
 <h2 id="general">General Information</h2>
 
@@ -317,7 +318,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 <p>Please be sure to complete these surveys <strong>before</strong> the workshop:</p>
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p>Please be sure to complete these surveys <strong>after</strong> the workshop:</p>
-<p><a href="#">PRACE course feedback</a></p>
+<p><a href="https://events.prace-ri.eu/event/1406/surveys/974">PRACE course feedback</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 <hr/>
 
